@@ -1,0 +1,5 @@
+# Eclipse conf files 
+.classpath
+.project
+.settings/*
+eclipse/*
