@@ -1,12 +1,12 @@
 package models;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class Lottery {
 
 	private int number;
-	private Collection<LotteryResult> result = new HashSet<LotteryResult>();
+	private Collection<LotteryResult> result = new LinkedHashSet<LotteryResult>();
 
 	public int getNumber() {
 		return number;
