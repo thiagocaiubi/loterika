@@ -1,5 +1,6 @@
 package models;
 
+
 public class LotteryResult {
 
 	private int number;
