@@ -3,4 +3,12 @@
 
 <div id="logo">
 	<h1>Loterika</h1>
+	<div>
+		<h3>${lottery.number}</h3>
+		<ul>
+			#{list items:lottery.result, as:'result'}
+				<li>${result.number}</li>
+			#{/list}
+		</ul>
+	</div>
 </div>
