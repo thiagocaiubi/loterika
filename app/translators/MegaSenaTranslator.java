@@ -31,9 +31,8 @@ public class MegaSenaTranslator implements Translator {
 	
 	private void setResult(String[] chunks, Lottery lottery) {
 		String rawNumbers = chunks[RESULT_INDEX];
-		String sanitizedNumbers = rawNumbers.replaceAll("\\D", "");
 		Pattern pattern = Pattern.compile("\\d{2}");
-		Matcher matcher = pattern.matcher(sanitizedNumbers);
+		Matcher matcher = pattern.matcher(rawNumbers);
 		while (matcher.find()) {
 			LotteryResult lotteryResult = new LotteryResult(Integer.valueOf(matcher.group(0)));
 			lottery.addResult(lotteryResult);
