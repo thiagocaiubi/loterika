@@ -7,6 +7,7 @@ public class Lottery {
 
 	private int number;
 	private Collection<LotteryResult> result = new LinkedHashSet<LotteryResult>();
+	private LotteryType lotteryType;
 
 	public int getNumber() {
 		return number;
@@ -30,6 +31,14 @@ public class Lottery {
 		result.add(lotteryResult);
 	}
 	
+	public LotteryType getLotteryType() {
+		return lotteryType;
+	}
+
+	public void setLotteryType(LotteryType lotteryType) {
+		this.lotteryType = lotteryType;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

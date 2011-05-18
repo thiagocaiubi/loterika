@@ -41,4 +41,12 @@ public class LotteryTest extends UnitTest {
 		assertFalse(lottery.getResult().isEmpty());
 		assertEquals(one, lottery.getResult().iterator().next());
 	}
+	
+	@Test
+	public void testLotteryType() {
+		Lottery lottery = new Lottery();
+		lottery.setLotteryType(LotteryType.MEGA_SENA);
+		
+		assertEquals(LotteryType.MEGA_SENA, lottery.getLotteryType());
+	}
 }

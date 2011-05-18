@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 
 import models.Lottery;
 import models.LotteryResult;
+import models.LotteryTest;
+import models.LotteryType;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -41,5 +43,10 @@ public class MegaSenaTranslatorTest extends UnitTest {
 		result.add(new LotteryResult(20));
 		result.add(new LotteryResult(16));
 		assertEquals(result, lottery.getResult());
+	}
+	
+	@Test
+	public void testLotteryTest() throws Exception {
+		assertEquals(LotteryType.MEGA_SENA, lottery.getLotteryType());
 	}
 }
