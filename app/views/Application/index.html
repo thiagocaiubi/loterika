@@ -1,15 +1,22 @@
 #{extends 'main.html' /}
 #{set title:'Loterika' /}
 
+#{set 'moreScripts'}
+<link href="@{'/public/stylesheets/lottery.css'}" rel="stylesheet" media="screen">
+#{/set}
 <div id="logo">
 	<h1>Loterika</h1>
-	<div>
-		<h3>${lottery.lotteryType}</h3>
-		<h3>${lottery.number}</h3>
-		<ul>
-			#{list items:lottery.result, as:'result'}
-				<li>${result.number}</li>
-			#{/list}
-		</ul>
+</div>
+<div class="lottery">
+	<div class="${lottery.lotteryType.name.toLowerCase()}">
+		<div class="type">${lottery.lotteryType}</div>
+		<div class="number">${lottery.number}</div>
+		<div class="result">
+			<ul>
+				#{list items:lottery.result, as:'result'}
+					<li>${result.number}</li>
+				#{/list}
+			</ul>
+		</div>
 	</div>
 </div>

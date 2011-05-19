@@ -1,0 +1,47 @@
+.mega-sena{
+	background: #4A8419;
+    background: 
+      -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), color-stop(0.5, rgba(255,255,255,0.1)), color-stop(0.501, rgba(255,255,255,0.0)), to(rgba(255,255,255,0.0))),
+      -webkit-gradient(linear, left top, left bottom, from(#58aa00), to(#337100));
+    background:
+      -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 50.01%, rgba(255,255,255,0)),
+      -webkit-linear-gradient(#58aa00, #337100);
+    background:
+      -moz-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 50.01%, rgba(255,255,255,0)),
+      -moz-linear-gradient(#58aa00, #337100);
+    background:
+      -ms-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 50.01%, rgba(255,255,255,0)),
+      -ms-linear-gradient(#58aa00, #337100);
+    background:
+      -o-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 50.01%, rgba(255,255,255,0)),
+      -o-linear-gradient(#58aa00, #337100);
+    background:
+      linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 50.01%, rgba(255,255,255,0)),
+      linear-gradient(#58aa00, #337100);
+}
+.lottery > div{
+	border-radius: 15px;
+	font-size: 200%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 60%;
+}
+.lottery .type{
+	float: left;
+}
+.lottery .number{
+	float: right;
+}
+.lottery .result{
+	clear: both;
+}
+.lottery ul{
+	list-style: none;
+	margin: 0px;
+	padding-left: 0;
+}
+.lottery ul li{
+	display: inline;
+	margin: 0 25px;
+}
