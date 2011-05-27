@@ -5,6 +5,10 @@
 # Home page
 GET     /                                       Application.index
 
+# API
+GET     /api                                    API.index
+GET     /api/{lotteryType}                      API.lotteryType
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -1,8 +1,17 @@
 package models;
 
+import fetch.MegaSenaFetch;
+
 public enum LotteryType {
 	
-	MEGA_SENA("Mega-Sena");
+	MEGA_SENA("Mega-Sena") {
+		@Override
+		public Lottery fetch() {
+			return new MegaSenaFetch().fetch();
+		}
+	};
+	
+	public abstract Lottery fetch();
 	
 	private String name;
 
@@ -11,11 +20,6 @@ public enum LotteryType {
 	}
 	
 	public String getName() {
-		return name;
-	}
-	
-	@Override
-	public String toString() {
 		return name;
 	}
 }

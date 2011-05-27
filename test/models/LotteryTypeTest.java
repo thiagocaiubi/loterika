@@ -7,8 +7,17 @@ import play.test.UnitTest;
 public class LotteryTypeTest extends UnitTest {
 
 	@Test
-	public void testMegaSena() {
+	public void testName() {
 		assertEquals("Mega-Sena", LotteryType.MEGA_SENA.getName());
-		assertEquals("Mega-Sena", LotteryType.MEGA_SENA.toString());
+	}
+	
+	@Test
+	public void testToString() {
+		assertEquals("MEGA_SENA", LotteryType.MEGA_SENA.toString());
+	}
+	
+	@Test
+	public void testToFetch() {
+		assertNotNull(LotteryType.MEGA_SENA.fetch());
 	}
 }

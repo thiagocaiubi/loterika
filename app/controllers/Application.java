@@ -12,7 +12,7 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-    	Lottery lottery = new MegaSenaFetch().fetch();
+    	Lottery lottery = new MegaSenaFetch(1260).fetch();
         render(lottery);
     }
 }
