@@ -6,3 +6,4 @@ eclipse/*
 tmp/*
 test-result/*
 logs/*
+precompiled/*
